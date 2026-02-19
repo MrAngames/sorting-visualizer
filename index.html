@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сортировка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Визуализация сортировок</h1>
+    <p></p>
+</header>
+
+<section class="ctrls">
+    <select id="algo">
+        <option value="bubble">Сортировка пузырьком</option>
+        <option value="select">Сортировка выбором</option>
+        <option value="insert">Сортировка вставкой</option>
+    </select>
+
+    <div class="slider-wrap">
+        <label for="sz">Размер массива: <span id="sz-val">20</span></label>
+        <input type="range" id="sz" min="10" max="150" value="20">
+    </div>
+
+    <div class="slider-wrap">
+        <label for="spd">Скорость (шагов/сек): <span id="spd-val">20</span></label>
+        <input type="range" id="spd" min="1" max="100" value="20">
+    </div>
+
+
+    <button id="go">Старт</button>
+</section>
+
+
+<section class="canvas-wrap">
+    <canvas id="cnv"></canvas>
+</section>
+
+<footer>
+    <p>Выполнил Чечелев Андрей</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
